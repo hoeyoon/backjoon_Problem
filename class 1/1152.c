@@ -9,7 +9,7 @@ int main(){
     count++;
   }
   for(int i = 0; i < strlen(word); i++){
-    if(word[i] == ' ' && word[i - 1] != ' '){
+    if(word[i] != ' ' && word[i - 1] == ' '){
       count++;
     }
   }
